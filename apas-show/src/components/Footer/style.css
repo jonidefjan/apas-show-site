@@ -4,7 +4,8 @@
   background-color: #FFEFD1;
   display: flex;
   justify-content:center;
-  align-items:center;
+  align-items:flex-start;
+  padding-top: 65px;
 }
 
 #footer .col-one{
@@ -13,6 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 #footer .col-one img{
@@ -51,8 +53,8 @@
 }
 #footer .col-three{
   flex: 2;
-  position: relative;
-  top: -25px;
+  display: flex;
+    justify-content: center;
 }
 #footer .col-three .category{
   display: inline-table;
