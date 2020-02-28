@@ -1,8 +1,7 @@
 import React from 'react';
 import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
-import { faCalendar } from '@fortawesome/free-regular-svg-icons';
+import { faEnvelope, faCalendar, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookSquare, faTwitterSquare, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import logo from '../../assets/logo_apas.png'
 
@@ -16,28 +15,21 @@ const map = <FontAwesomeIcon icon={faMapMarkerAlt}/>
 
 const Footer = () => (
   <footer id="footer">
-
-    <div className="col-one">
-      <img src={logo} className="logo-apas"></img>
+    <img src={logo} className="logo-apas"></img>
+    <div className="info">
+      <h1>{calendar} 18 a 21 de maio de 2020</h1>
+      <h1>{map} expo center norte</h1>
+      <hr/>
+      <ul className="social">
+        <li><a href="">{face}</a></li>
+        <li><a href="">{tw}</a></li>
+        <li><a href="">{yt}</a></li>
+        <li><a href="">{lnd}</a></li>
+        <li><a href="">{envelope}</a></li>
+      </ul>
     </div>
-
-    <div className="col-two">
-      <div className="info">
-        <p className="icone-info">{calendar} 18 a 21 de maio de 2020</p>
-        <p className="icone-info">{map}  expo center norte</p>
-      </div>
-      <div className="social">
-        <ul>
-          <li><a href="">{face}</a></li>
-          <li><a href="">{tw}</a></li>
-          <li><a href="">{yt}</a></li>
-          <li><a href="">{lnd}</a></li>
-          <li><a href="">{envelope}</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div className="col-three">
+    <div className="navegation">
+      <ul>
         <ul className="category">
           <li>expositores</li>
           <li>mapa</li>
@@ -74,7 +66,7 @@ const Footer = () => (
           <li>fotos</li>
           <li>contato</li>
         </ul>
-
+      </ul>
     </div>
 
   </footer>
