@@ -3,6 +3,10 @@ import { Container, Navbar, Nav, Button, ButtonGroup } from 'react-bootstrap';
 import './style.css';
 import { LOCALES } from '../../i18n';
 
+const locale = '';
+
+const setLocale = localStorage.setItem(LOCALES, locale)
+
 const Header = () => (
   <Container>
     
@@ -20,9 +24,9 @@ const Header = () => (
       </Nav>
       <Nav className="mr-auto">
       <ButtonGroup aria-label="Basic example">
-        <Button variant="secondary" onClick={() => setLocale(LOCALES.PORTUGUES)} >PT</Button>
-        <Button variant="secondary" onClick={() => setLocale(LOCALES.PORTUGUES)} >EN</Button>
-        <Button variant="secondary" onClick={() => setLocale(LOCALES.PORTUGUES)} >ES</Button>
+        <Button variant="secondary" onClick={() => setLocale(LOCALES, 'pt')} >PT</Button>
+        <Button variant="secondary" onClick={() => setLocale(LOCALES, 'en')} >EN</Button>
+        <Button variant="secondary" onClick={() => setLocale(LOCALES, 'es')} >ES</Button>
       </ButtonGroup>
       </Nav>
     </Navbar.Collapse>

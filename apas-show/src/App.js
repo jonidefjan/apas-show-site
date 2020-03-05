@@ -4,12 +4,9 @@ import './style.css';
 
 import { I18nProvider, LOCALES } from './i18n'
 
-
-import translate from './i18n/translate'
-
 import Header from './components/Header/Index';
-import Main from './pages/main/index';
 import Footer from './components/Footer';
+import Congresso from './pages/congresso'
 
 
 function App() {
@@ -18,9 +15,9 @@ function App() {
   return (
     <I18nProvider locale={locale}>
       <div className="App">
-          {translate("congresso")}
+          
           <Header />
-          <Main />
+          <Congresso />
           <Footer />
       </div>
     </I18nProvider>
