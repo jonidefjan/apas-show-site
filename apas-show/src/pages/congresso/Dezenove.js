@@ -4,15 +4,15 @@ import {Container, Row, Col, Table} from 'react-bootstrap'
 const Dezenove = () => {
     return (
         <Container>
-            <Row>
-                <Col>
+            <Row className="auditorio">
+                <Col >
                     <h1>grande auditorio</h1>
-                    <h2>Como tendências tecnológicas criam oportunidades de negócios</h2>
+                    <p>Como tendências tecnológicas criam oportunidades de negócios</p>
                 </Col>
             </Row>
-            <Row>
+            <Row className="temasPrincipais">
                 <Col>
-                    <Table responsive>
+                    <Table className="temas">
 
                         <thead>
                             <tr>
@@ -88,15 +88,15 @@ const Dezenove = () => {
                 </Col>
             </Row>
 
-            <Row>
+            <Row className="temaCard">
                 <Col>
                     <h1>Desenvolvimento e Formação</h1>
                     <h2>XXhXX às XXhXX</h2>
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    <p className="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.</h3>
-                    <Table responsive>
+                        consequat.</p>
+                    <Table className="temasSecundarios">
 
                         <thead>
                             <tr>
@@ -104,10 +104,11 @@ const Dezenove = () => {
                                     <h2>Tema</h2>
                                 </th>
                                 <th>
-                                    <h4>Engajamento dos funcionários<br/>
-                                    Moderador:
+                                    <h1>Engajamento dos funcionários<br/></h1>
+                                    <h2>Moderador:
+                                       
                                         <b>Fulano da Silva</b>
-                                        / Empresa X</h4>
+                                        / Empresa X</h2>
                                 </th>
                             </tr>
                         </thead>
@@ -173,21 +174,21 @@ const Dezenove = () => {
                 <Col>
                     <h1>E-Commerce e Omni</h1>
                     <h2>XXhXX às XXhXX</h2>
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    <p className="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.</h3>
-                    <Table responsive>
+                        consequat.</p>
+                    <Table  className="temasSecundarios">
 
                         <thead>
                             <tr>
                                 <th>
-                                    <h1>Tema</h1>
+                                    <h2>Tema</h2>
                                 </th>
                                 <th>
                                     <h1>A loja virtual</h1>
-                                    <h2>Moderador:
-                                        <b>Fulano da Silva</b>
+                                    <h2>Moderador: 
+                                        <b> Fulano da Silva</b>
                                         / Empresa X</h2>
                                 </th>
                             </tr>
@@ -251,6 +252,499 @@ const Dezenove = () => {
 
                 </Col>
             </Row>
+            <Row className="temaCard">
+                <Col>
+                    <h1>Desenvolvimento e Formação</h1>
+                    <h2>XXhXX às XXhXX</h2>
+                    <p className="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                    <Table className="temasSecundarios">
+
+                        <thead>
+                            <tr>
+                                <th>
+                                    <h2>Tema</h2>
+                                </th>
+                                <th>
+                                    <h1>Engajamento dos funcionários<br/></h1>
+                                    <h2>Moderador:
+                                       
+                                        <b>Fulano da Silva</b>
+                                        / Empresa X</h2>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h2>
+                                        <b>Tendências</b>
+                                    </h2>
+                                </td>
+                                <td>
+                                    <p>Ações práticas para empoderar a equipe</p>
+                                    <p>
+                                        <b>Marcelo Salum da Costa</b>
+                                        / Instituto Brasileiro de Vendas & Varejo - Questionário</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2>
+                                        <b>Estratégia</b>
+                                    </h2>
+                                </td>
+                                <td>
+                                    <p>Ações práticas para empoderar a equipe</p>
+                                    <p>
+                                        <b>Marcelo Salum da Costa</b>
+                                        / Instituto Brasileiro de Vendas & Varejo - Questionário</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2>
+                                        <b>Tática</b>
+                                    </h2>
+                                </td>
+                                <td>
+                                    <p>Ações práticas para empoderar a equipe</p>
+                                    <p>
+                                        <b>Marcelo Salum da Costa</b>
+                                        / Instituto Brasileiro de Vendas & Varejo - Questionário</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2>
+                                        <b>Cases</b>
+                                    </h2>
+                                </td>
+                                <td>
+                                    <p>Ações práticas para empoderar a equipe</p>
+                                    <p>
+                                        <b>Marcelo Salum da Costa</b>
+                                        / Instituto Brasileiro de Vendas & Varejo - Questionário</p>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </Table>
+
+                </Col>
+
+                <Col>
+                    <h1>E-Commerce e Omni</h1>
+                    <h2>XXhXX às XXhXX</h2>
+                    <p className="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                    <Table  className="temasSecundarios">
+
+                        <thead>
+                            <tr>
+                                <th>
+                                    <h2>Tema</h2>
+                                </th>
+                                <th>
+                                    <h1>A loja virtual</h1>
+                                    <h2>Moderador: 
+                                        <b> Fulano da Silva</b>
+                                        / Empresa X</h2>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h2>
+                                        <b>Tendências</b>
+                                    </h2>
+                                </td>
+                                <td>
+                                    <p>Ações práticas para empoderar a equipe</p>
+                                    <p>
+                                        <b>Marcelo Salum da Costa</b>
+                                        / Instituto Brasileiro de Vendas & Varejo - Questionário</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2>
+                                        <b>Estratégia</b>
+                                    </h2>
+                                </td>
+                                <td>
+                                    <p>Ações práticas para empoderar a equipe</p>
+                                    <p>
+                                        <b>Marcelo Salum da Costa</b>
+                                        / Instituto Brasileiro de Vendas & Varejo - Questionário</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2>
+                                        <b>Tática</b>
+                                    </h2>
+                                </td>
+                                <td>
+                                    <p>Ações práticas para empoderar a equipe</p>
+                                    <p>
+                                        <b>Marcelo Salum da Costa</b>
+                                        / Instituto Brasileiro de Vendas & Varejo - Questionário</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2>
+                                        <b>Cases</b>
+                                    </h2>
+                                </td>
+                                <td>
+                                    <p>Ações práticas para empoderar a equipe</p>
+                                    <p>
+                                        <b>Marcelo Salum da Costa</b>
+                                        / Instituto Brasileiro de Vendas & Varejo - Questionário</p>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </Table>
+
+                </Col>
+            </Row>
+            <Row className="temaCard">
+                <Col>
+                    <h1>Desenvolvimento e Formação</h1>
+                    <h2>XXhXX às XXhXX</h2>
+                    <p className="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                    <Table className="temasSecundarios">
+
+                        <thead>
+                            <tr>
+                                <th>
+                                    <h2>Tema</h2>
+                                </th>
+                                <th>
+                                    <h1>Engajamento dos funcionários<br/></h1>
+                                    <h2>Moderador:
+                                       
+                                        <b>Fulano da Silva</b>
+                                        / Empresa X</h2>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h2>
+                                        <b>Tendências</b>
+                                    </h2>
+                                </td>
+                                <td>
+                                    <p>Ações práticas para empoderar a equipe</p>
+                                    <p>
+                                        <b>Marcelo Salum da Costa</b>
+                                        / Instituto Brasileiro de Vendas & Varejo - Questionário</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2>
+                                        <b>Estratégia</b>
+                                    </h2>
+                                </td>
+                                <td>
+                                    <p>Ações práticas para empoderar a equipe</p>
+                                    <p>
+                                        <b>Marcelo Salum da Costa</b>
+                                        / Instituto Brasileiro de Vendas & Varejo - Questionário</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2>
+                                        <b>Tática</b>
+                                    </h2>
+                                </td>
+                                <td>
+                                    <p>Ações práticas para empoderar a equipe</p>
+                                    <p>
+                                        <b>Marcelo Salum da Costa</b>
+                                        / Instituto Brasileiro de Vendas & Varejo - Questionário</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2>
+                                        <b>Cases</b>
+                                    </h2>
+                                </td>
+                                <td>
+                                    <p>Ações práticas para empoderar a equipe</p>
+                                    <p>
+                                        <b>Marcelo Salum da Costa</b>
+                                        / Instituto Brasileiro de Vendas & Varejo - Questionário</p>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </Table>
+
+                </Col>
+
+                <Col>
+                    <h1>E-Commerce e Omni</h1>
+                    <h2>XXhXX às XXhXX</h2>
+                    <p className="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                    <Table  className="temasSecundarios">
+
+                        <thead>
+                            <tr>
+                                <th>
+                                    <h2>Tema</h2>
+                                </th>
+                                <th>
+                                    <h1>A loja virtual</h1>
+                                    <h2>Moderador: 
+                                        <b> Fulano da Silva</b>
+                                        / Empresa X</h2>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h2>
+                                        <b>Tendências</b>
+                                    </h2>
+                                </td>
+                                <td>
+                                    <p>Ações práticas para empoderar a equipe</p>
+                                    <p>
+                                        <b>Marcelo Salum da Costa</b>
+                                        / Instituto Brasileiro de Vendas & Varejo - Questionário</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2>
+                                        <b>Estratégia</b>
+                                    </h2>
+                                </td>
+                                <td>
+                                    <p>Ações práticas para empoderar a equipe</p>
+                                    <p>
+                                        <b>Marcelo Salum da Costa</b>
+                                        / Instituto Brasileiro de Vendas & Varejo - Questionário</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2>
+                                        <b>Tática</b>
+                                    </h2>
+                                </td>
+                                <td>
+                                    <p>Ações práticas para empoderar a equipe</p>
+                                    <p>
+                                        <b>Marcelo Salum da Costa</b>
+                                        / Instituto Brasileiro de Vendas & Varejo - Questionário</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2>
+                                        <b>Cases</b>
+                                    </h2>
+                                </td>
+                                <td>
+                                    <p>Ações práticas para empoderar a equipe</p>
+                                    <p>
+                                        <b>Marcelo Salum da Costa</b>
+                                        / Instituto Brasileiro de Vendas & Varejo - Questionário</p>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </Table>
+
+                </Col>
+            </Row>
+            <Row className="temaCard">
+                <Col>
+                    <h1>Desenvolvimento e Formação</h1>
+                    <h2>XXhXX às XXhXX</h2>
+                    <p className="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                    <Table className="temasSecundarios">
+
+                        <thead>
+                            <tr>
+                                <th>
+                                    <h2>Tema</h2>
+                                </th>
+                                <th>
+                                    <h1>Engajamento dos funcionários<br/></h1>
+                                    <h2>Moderador:
+                                       
+                                        <b>Fulano da Silva</b>
+                                        / Empresa X</h2>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h2>
+                                        <b>Tendências</b>
+                                    </h2>
+                                </td>
+                                <td>
+                                    <p>Ações práticas para empoderar a equipe</p>
+                                    <p>
+                                        <b>Marcelo Salum da Costa</b>
+                                        / Instituto Brasileiro de Vendas & Varejo - Questionário</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2>
+                                        <b>Estratégia</b>
+                                    </h2>
+                                </td>
+                                <td>
+                                    <p>Ações práticas para empoderar a equipe</p>
+                                    <p>
+                                        <b>Marcelo Salum da Costa</b>
+                                        / Instituto Brasileiro de Vendas & Varejo - Questionário</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2>
+                                        <b>Tática</b>
+                                    </h2>
+                                </td>
+                                <td>
+                                    <p>Ações práticas para empoderar a equipe</p>
+                                    <p>
+                                        <b>Marcelo Salum da Costa</b>
+                                        / Instituto Brasileiro de Vendas & Varejo - Questionário</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2>
+                                        <b>Cases</b>
+                                    </h2>
+                                </td>
+                                <td>
+                                    <p>Ações práticas para empoderar a equipe</p>
+                                    <p>
+                                        <b>Marcelo Salum da Costa</b>
+                                        / Instituto Brasileiro de Vendas & Varejo - Questionário</p>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </Table>
+
+                </Col>
+
+                <Col>
+                    <h1>E-Commerce e Omni</h1>
+                    <h2>XXhXX às XXhXX</h2>
+                    <p className="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                    <Table  className="temasSecundarios">
+
+                        <thead>
+                            <tr>
+                                <th>
+                                    <h2>Tema</h2>
+                                </th>
+                                <th>
+                                    <h1>A loja virtual</h1>
+                                    <h2>Moderador: 
+                                        <b> Fulano da Silva</b>
+                                        / Empresa X</h2>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h2>
+                                        <b>Tendências</b>
+                                    </h2>
+                                </td>
+                                <td>
+                                    <p>Ações práticas para empoderar a equipe</p>
+                                    <p>
+                                        <b>Marcelo Salum da Costa</b>
+                                        / Instituto Brasileiro de Vendas & Varejo - Questionário</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2>
+                                        <b>Estratégia</b>
+                                    </h2>
+                                </td>
+                                <td>
+                                    <p>Ações práticas para empoderar a equipe</p>
+                                    <p>
+                                        <b>Marcelo Salum da Costa</b>
+                                        / Instituto Brasileiro de Vendas & Varejo - Questionário</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2>
+                                        <b>Tática</b>
+                                    </h2>
+                                </td>
+                                <td>
+                                    <p>Ações práticas para empoderar a equipe</p>
+                                    <p>
+                                        <b>Marcelo Salum da Costa</b>
+                                        / Instituto Brasileiro de Vendas & Varejo - Questionário</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2>
+                                        <b>Cases</b>
+                                    </h2>
+                                </td>
+                                <td>
+                                    <p>Ações práticas para empoderar a equipe</p>
+                                    <p>
+                                        <b>Marcelo Salum da Costa</b>
+                                        / Instituto Brasileiro de Vendas & Varejo - Questionário</p>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </Table>
+
+                </Col>
+            </Row>
+            
         </Container>
     )
 }

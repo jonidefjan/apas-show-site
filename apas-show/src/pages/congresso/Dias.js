@@ -10,15 +10,15 @@ const Dias = () =>{
   const [key, setKey] = useState('dezenove');
     
   return (
-    <Tabs defaultActiveKey="dezenove" id="congressos" activeKey={key} onSelect={k => setKey(k)}>
-          <Tab eventKey="dezenove" title="19/05">
+    <Tabs justify defaultActiveKey="dezenove" id="congressos" activeKey={key} onSelect={k => setKey(k)} className="congressosTabs">
+          <Tab eventKey="dezenove" title="19/05" className="congressosTab">
             <Dezenove />
           </Tab>
-          <Tab eventKey="vinte" title="20/05">
-            <Vinte />
+          <Tab eventKey="vinte" title="20/05" className="congressosTab">
+            <Dezenove />
           </Tab>
-          <Tab eventKey="vinteum" title="21/05">
-            <Vinteum />
+          <Tab eventKey="vinteum" title="21/05" className="congressosTab">
+            <Dezenove />
           </Tab>
     </Tabs>
   )

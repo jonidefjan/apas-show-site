@@ -1,5 +1,5 @@
 import React from 'react';
-import {Col, Row, Container } from 'react-bootstrap'
+import {Col, Row, Container, Media } from 'react-bootstrap'
 import wifiIcon from '../../assets/icon_balao_wifi.png'
 import translate from '../../i18n/translate'
 import Dias from './Dias'
@@ -8,22 +8,25 @@ const Congresso = () =>(
   
   <Container>
     <Row>
-      <Col>
+      <Col className="pageTitle">
       
+
+
         <img src={wifiIcon} alt="Congresso"/>
-        <h1>{translate("congresso")}</h1>
+<h1>{translate("congresso")}</h1>
+        
         
       </Col>
     </Row>
-    <Row>
-      <Col>
+    <Row className="resumoCongresso">
+      <Col className="destaqueAmarelo">
 
-        <p>Durante a APAS Show também acontece o Congresso Internacional de Gestão.</p>
+        <h1>Durante a APAS Show também acontece o Congresso Internacional de Gestão.</h1>
 
       </Col>
-      <Col>
+      <Col className="destaqueTxt">
       
-        <p>O Congresso de Gestão APAS é um dos mais importantes do setor supermercadista. Anualmente reúne mais de 3 mil congressistas para assistir à cerca de 60 palestras durantes os três dias de evento na APAS Show.</p>
+        <p>O <b>Congresso de Gestão APAS</b> é um dos mais importantes do setor supermercadista. Anualmente reúne mais de <b>3 mil congressistas</b> para assistir à cerca de <b>60 palestras</b> durantes os três dias de evento na APAS Show.</p>
         <p>Especialistas internacionais, convidados e representantes governamentais e da iniciativa privada estão entre os palestrantes do Congresso APAS.</p>
 
       </Col>
