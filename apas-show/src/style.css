@@ -252,3 +252,21 @@ b{
   background: #FFFBD2;
   opacity: 0.95;
 }
+
+.home{
+  max-width: 1600px;
+  padding: 0;
+  margin: 0;
+
+}
+.banner_home{
+  background-color: #FCE63C;
+  height: 650px;
+  max-width: 1600px;
+}
+.home .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column  ;
+}

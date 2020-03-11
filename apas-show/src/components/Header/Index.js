@@ -17,14 +17,14 @@ const Header = () => (
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mr-auto">
-        <Nav.Link href="#home">Home</Nav.Link>
-        <Nav.Link href="#mapa">Mapa e expositores</Nav.Link>
-        <Nav.Link href="#inovacoes">Arena inovações</Nav.Link>
-        <Nav.Link href="#premios">Prêmios</Nav.Link>
-        <Nav.Link href="#congresso">Congresso</Nav.Link>
-        <Nav.Link href="#social">Resp. Social</Nav.Link>
-        <Nav.Link href="#imprensa">Imprensa</Nav.Link>
-        <Nav.Link href="#imprensa">Inf. Úteis</Nav.Link>
+        <Nav.Link href="/">Home</Nav.Link>
+        <Nav.Link href="/mapa">Mapa e expositores</Nav.Link>
+        <Nav.Link href="/inovacoes">Arena inovações</Nav.Link>
+        <Nav.Link href="/premios">Prêmios</Nav.Link>
+        <Nav.Link href="/congresso">Congresso</Nav.Link>
+        <Nav.Link href="/social">Resp. Social</Nav.Link>
+        <Nav.Link href="/imprensa">Imprensa</Nav.Link>
+        <Nav.Link href="/imprensa">Inf. Úteis</Nav.Link>
       </Nav>
       <Nav className="mr-auto">
       <ButtonGroup aria-label="Basic example">
