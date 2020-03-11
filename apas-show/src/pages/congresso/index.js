@@ -3,17 +3,27 @@ import {Col, Row, Container, Media } from 'react-bootstrap'
 import wifiIcon from '../../assets/icon_balao_wifi.png'
 import translate from '../../i18n/translate'
 import Dias from './Dias'
+import topo from '../../assets/congresso.png'
 
 const Congresso = () =>(
-  
-  <Container>
+
+  <Container className="desk">
+
+  <div className="topoCongresso__container">
+    <Row className="topoCongresso">
+      <div className="above-background">
+
+      </div>
+    </Row>
+  </div>
+
     <Row>
       <Col className="pageTitle">
       
 
 
         <img src={wifiIcon} alt="Congresso"/>
-<h1>{translate("congresso")}</h1>
+        <h1>{translate("congresso")}</h1>
         
         
       </Col>
@@ -31,7 +41,7 @@ const Congresso = () =>(
 
       </Col>
     </Row>
-    <Row>
+    <Row className="agenda">
       <Col>
 
         <Dias/>
