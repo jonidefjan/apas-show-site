@@ -1,4 +1,7 @@
 
+:root {
+  font-size: 1rem;
+}
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +34,7 @@ body{
 }
 .pageTitle h1{
   margin-left: 30px;
-  font-size: 70px;
+  font-size: 4.375rem;
   font-weight: bold;
   line-height: 82px;
 }
@@ -47,7 +50,7 @@ body{
   padding: 30px;
 }
 .destaqueAmarelo h1{
-  font-size: 27px;
+  font-size: 1.688rem;
   font-weight: bold;
   line-height: 43px;
 }
@@ -71,7 +74,7 @@ body{
 }
 .congressosTabs a{
   color: black;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   width: 215px;
   margin: 0 100px;
@@ -106,14 +109,14 @@ body{
 }
 .auditorio .col h1{
   text-transform: capitalize;
-  font-size: 37px;
+  font-size: 2.313rem;
   font-weight: bolder;
   line-height: 38px;
   color: #FD2270;
 }
 
 .auditorio .col p{
-  font-size: 37px;
+  font-size: 2.313rem;
   font-weight: light;
   line-height: 38px;
   color: #FD2270;
@@ -138,13 +141,13 @@ body{
 }
 
 .temasPrincipais .temas thead th h1{
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 27px;
   font-weight: bold;
   white-space: nowrap;
 }
 .temasPrincipais .temas thead th h2{
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 27px;
   font-weight: light;
   white-space: nowrap;
@@ -155,19 +158,19 @@ body{
 }
 
 .temaCard  .col h1{
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: bold;
   line-height: 38px;
   color:#FD2270;
 }
 .temaCard .col h2{
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: lighter;
   line-height: 38px;
   color:#FD2270;
 }
 .descricao{
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: lighter;
   line-height: 24px;
   color:#FD2270 !important;
@@ -195,14 +198,14 @@ body{
   color: #000 !important;
 }
 .temasSecundarios h2{
-  font-size: 18px !important;
+  font-size: 1.125rem !important;
   line-height: 27px !important;
   font-weight: lighter !important;
 
 }
 
 .temasSecundarios h1{
-  font-size: 18px !important;
+  font-size: 1.125rem !important;
   line-height: 27px !important;
   font-weight: bolder !important;
 }
@@ -267,6 +270,5 @@ b{
 .home .container{
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column  ;
 }

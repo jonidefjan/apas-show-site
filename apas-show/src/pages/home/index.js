@@ -1,45 +1,155 @@
 import React from 'react';
 import {Container, Row, Col, Button, Media} from 'react-bootstrap'
+import './style.css'
 
 const Home = () =>{
   return(
   <Container className="home">
     <Container className="banner_home"></Container>
 
-    <Container>
-      <h1>Confira alguns números da <b>feira em 2019</b></h1>
+    <Container className="numeros">
+      <h1 className="titulo_home">Confira alguns números da <b>feira em 2019</b></h1>
       <Row>
-        <Col>
+        <Col className="expositores dados">
+          
           <h2>Expositores</h2>
           <hr></hr>
-          <h1>847</h1><span>EXPOSITORES em 2019</span>
-          <h1>204</h1><span>INTERNACIONAIS de 22 países</span>
-          <h1>US$330</h1><span>MILHÕES em negociações internacionais</span>
+          <div className="dados_descricao">
+            <Row>
+              <Col className="destaque_num">
+                <h1>847</h1>
+              </Col>
+              <Col className="destaque_txt">
+                <Row>expositores</Row>
+                <Row>em 2019</Row>
+              </Col>
+            </Row>
+            <Row>
+              <Col className="destaque_num">
+                <h1>204</h1>
+              </Col>
+              <Col className="destaque_txt">
+                <Row>internacionais</Row>
+                <Row>de 22 países</Row>
+              </Col>
+            </Row>
+            <Row>
+              <Col className="destaque_num">
+                <h1>US$330</h1>
+              </Col>
+              <Col className="destaque_txt">
+                <Row>milhões em</Row>
+                <Row>negociações internacionais</Row>
+              </Col>
+            </Row>
+
+          </div>
         </Col>
-        <Col>
+        <Col className="visitantes dados">
+          
           <h2>Visitantes</h2>
           <hr></hr>
-          <h1>58.613</h1><span>visitantes representando</span>
-          <h1>11.464</h1><span>empresas</span>
-          <h1>106.836</h1><span>visitas gerando</span>
+          <div className="dados_descricao">
+            <Row>
+              <Col className="destaque_num">
+                <h1>58.613</h1>
+              </Col>
+              <Col className="destaque_txt">
+                <Row>visitantes</Row>
+                <Row>representando</Row>
+              </Col>
+            </Row>
+            <Row>
+              <Col className="destaque_num">
+                <h1>11.464</h1>
+              </Col>
+              <Col className="destaque_txt">
+                <Row>empresas</Row>
+              </Col>
+            </Row>
+            <Row>
+              <Col className="destaque_num">
+                <h1>106.836</h1>
+              </Col>
+              <Col className="destaque_txt">
+                <Row>visitas</Row>
+                <Row>gerando</Row>
+              </Col>
+            </Row>
+
+          </div>
         </Col>
       </Row>
 
       <Row>
-        <Col>
+        <Col className="conexoes dados">
           <h2>Conexões de Negócios</h2>
           <hr></hr>
-          <h1>1053</h1><span>reuniões</span>
-          <h1>192</h1><span>empresas brasileiras</span>
-          <h1>91</h1><span>compradores internacionais de 30 países</span>
-          <h1>US$330</h1><span>MILHÕES em Negócios</span>
+          <div className="dados_descricao">
+            <Row>
+              <Col className="destaque_num">
+                <h1>1053</h1>
+              </Col>
+              <Col className="destaque_txt">
+                <Row>reuniões</Row>
+              </Col>
+            </Row>
+            <Row>
+              <Col className="destaque_num">
+                <h1>192</h1>
+              </Col>
+              <Col className="destaque_txt">
+                <Row>empresas</Row>
+                <Row>brasileiras</Row>
+              </Col>
+            </Row>
+            <Row>
+              <Col className="destaque_num">
+                <h1>91</h1>
+              </Col>
+              <Col className="destaque_txt">
+                <Row>compradores internacionais</Row>
+                <Row>de 30 países</Row>
+              </Col>
+            </Row>
+            <Row>
+              <Col className="destaque_num">
+                <h1>US$330</h1>
+              </Col>
+              <Col className="destaque_txt">
+                <Row>milhões em</Row>
+                <Row>negócios</Row>
+              </Col>
+            </Row>
+
+          </div>
         </Col>
-        <Col>
+        <Col className="gestao dados">
           <h2>Congresso de gestão</h2>
           <hr></hr>
-          <h1>4199</h1><span>congressistas</span>
-          <h1>6</h1><span>auditórios temáticos</span>
-          <h1>+ de 70 palestras</h1>
+          <div className="dados_descricao">
+            <Row>
+              <Col className="destaque_num">
+                <h1>4199</h1>
+              </Col>
+              <Col className="destaque_txt">
+                <Row>congressistas</Row>
+              </Col>
+            </Row>
+            <Row>
+              <Col className="destaque_num">
+                <h1>6</h1>
+              </Col>
+              <Col className="destaque_txt">
+                <Row>auditórios temáticos</Row>
+              </Col>
+            </Row>
+            <Row>
+              <Col className="destaque_num">
+                <h1>+ de 70 palestras</h1>
+              </Col>
+            </Row>
+          </div>
         </Col>
       </Row>
 
@@ -83,7 +193,7 @@ const Home = () =>{
     </Container>
 
     <Container>
-      <h1>Confira o que rolou na <b>APAS Show 2019</b></h1>
+      <h1 className="titulo_home">Confira o que rolou na <b>APAS Show 2019</b></h1>
       <Row>
         <Col>
           <div>

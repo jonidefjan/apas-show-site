@@ -2,7 +2,7 @@ header#main-header{
   width: 100%;
   height: 60px;
   background-color: #FCE63C;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
   display: flex;
   justify-content: space-around;
@@ -21,7 +21,7 @@ header#main-header li a {
   text-align: center;
   padding: 14px 16px;
   color: #000;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 16px;
   text-transform: uppercase;
   font-weight: lighter;
@@ -33,7 +33,7 @@ header#main-header li a:active{
   width: 82px;
   color: #FD2270;
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
   line-height: 16px;
 }
@@ -50,32 +50,34 @@ header#main-header button{
   height: 60px;
 }
 .header nav{
-  margin: 0px 95px;
+  margin: 0px auto;
 }
 .header a{
   color: #000 !important;
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;
   font-weight: 100;
+  white-space: nowrap;
 }
 .header a:active{
 
   color: #FD2270 !important;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: bold;
 }
 .header button{
   background: none;
   border: none;
   color: #000;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: normal;
+  white-space: nowrap;
 }
 .header button:hover{
   background: none;
   border: none;
   color: #000;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: normal;
 
 }
@@ -91,7 +93,7 @@ header#main-header button{
   margin-right: 10px;
 }
 .inscrevase{
-  font-size: 17px !important;
+  font-size: 1.063rem !important;
   color: white !important;
   font-weight: bold !important;
   border: 3px solid black !important;

@@ -1,0 +1,59 @@
+.titulo_home{
+  font-weight: lighter;
+  font-size: 2.75rem;
+  color: #FD2270;
+  line-height: 32px;
+  margin: 0 auto;
+}
+.dados h2{
+  font-size: 2.4375rem;
+  font-weight: bold;
+}
+.dados hr{
+  margin: 0px 80px 0 -50px;
+
+}
+.dados h1{
+  font-size: 4rem;
+  font-weight: bold;
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+}
+.destaque_num{
+  flex-grow: initial;
+  white-space: nowrap;
+}
+.destaque_txt {
+  align-self: center;
+}
+.expositores {
+  color:#8481B7;
+}
+.expositores hr{
+  border-top: 2px solid #8481B7;
+}
+.visitantes {
+  color:#44BFBD;
+}
+.visitantes hr{
+  border-top: 2px solid #44BFBD;
+}
+.conexoes h1, .conexoes h2{
+  color:#E3C148;
+}
+.conexoes {
+  color: #5C5D5F;
+}
+.conexoes hr{
+  border-top: 2px solid #E3C148;
+}
+.gestao h1, .gestao h2{
+  color: #F28133;
+}
+.gestao{
+  color: #5C5D5F;
+}
+.gestao hr{
+  border-top: 2px solid #F28133;
+}
