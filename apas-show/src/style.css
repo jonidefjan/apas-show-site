@@ -266,9 +266,38 @@ b{
   background-color: #FCE63C;
   height: 650px;
   max-width: 1600px;
+  background-image: 
+
+    url('./assets/logo_apas_1.png'), 
+    url('./assets/_icon_balao_wifi.png'), 
+    url('./assets/Group-3.png'),
+    url('./assets/_icon_grafico_barras.png'), 
+    url('./assets/titulo_amaior.png'), 
+    url('./assets/seta_data.png'),
+    url('./assets/Group-2.png'),
+    url('./assets/_icon_.png'),
+    url('./assets/Group.png'),
+    url('./assets/Group-4.png'),
+    url('./assets/Group-1.png')
+
+    ;
+  background-position: 
+    100px 50px,
+    100px 400px,
+    200px 400px,
+    450px 50px,
+    450px 60px,
+    145px 160px,
+    760px 500px,
+    980px 65px,
+    1130px 50px,
+    1140px 185px, 
+    1300px 60px
+    ;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 }
 .home .container{
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column  ;
 }

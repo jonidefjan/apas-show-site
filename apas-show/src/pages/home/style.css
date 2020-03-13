@@ -80,10 +80,14 @@
 .card_amarelo {
   box-shadow: -10px 10px 0px 0px rgba(252,230,60,1);
   background-color: #FFEFD1;
+  width: 300px;
+    height: 300px;
 }
 .card_azul {
   box-shadow: -10px 10px 0px 0px #18BAAF;
   background-color: #87F6F2;
+  width: 300px;
+    height: 300px;
 }
 .titulo_home{
   margin-top: 90px;
@@ -101,4 +105,78 @@
 }
 .gestao{
   margin-top: 50px !important;
+}
+.wide{
+  max-width: 1375px;
+}
+
+.card_amarelo div, .card_azul div{
+  display: grid;
+  grid-template-columns: 65% 35%;
+  font-size: 1.3125rem;
+  padding-top: 40px;
+  padding-left: 15px;
+}
+.cards .col:nth-child(even){
+  margin-top: 45px;
+}
+.cards .col h1{
+  text-align: center;
+  margin-bottom: 0px;
+  line-height: 32px;
+  color:#FD2270;
+  font-weight: bold;
+  font-size: 2.4375rem;
+}
+.full{
+  max-width: 1600px;
+  width: 100%;
+  padding-left: 25px;
+}
+.video_row{
+  text-align: center;
+  }
+iframe{
+  border: 10px solid black;
+}
+
+.video_col{
+  box-shadow: -10px 10px 0px 0px rgba(252,230,60,1);
+  background-color: #FFEFD1;
+  height: 637px;
+  background-image: url('../../assets/Group-1.png'), url('../../assets/Group 1.png'), url('../../assets/_icon_grafico_barras.png'),url('../../assets/icone_robos.png');
+  background-position: 10% 85%, 90% 25%, 10% 15%, 95% 85%;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+}
+.video_row div{
+  align-items: center;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+.fale{
+  margin: 70px auto;
+}
+.fale h1{
+  font-size: 2.1875rem;
+}
+.patrocinadores{
+  text-align: center;
+  white-space: nowrap;
+  margin-bottom: 100px;
+}
+.patrocinadores .row{
+  margin-bottom: 60px;
+}
+.apoio_institucional div{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.banner_home div{
+  position: absolute;
+  width: 450px;
+  height: 192px;
+  right: 115px;
 }
