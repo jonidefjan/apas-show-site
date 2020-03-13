@@ -28,13 +28,13 @@ const Header = () => (
       </Nav>
       <Nav className="mr-auto">
       <ButtonGroup aria-label="Basic example">
-        <Button variant="secondary" onClick={() => setLocale(LOCALES, 'pt')} >
+        <Button variant="secondary" >
           <img src={brflag}/>
            PT /</Button>
-        <Button variant="secondary" onClick={() => setLocale(LOCALES, 'en')} >
+        <Button variant="secondary" >
           <img src={enflag}/>
            EN /</Button>
-        <Button variant="secondary" onClick={() => setLocale(LOCALES, 'es')} >
+        <Button variant="secondary" >
           <img src={esflag}/>
            ES /</Button>
       </ButtonGroup>

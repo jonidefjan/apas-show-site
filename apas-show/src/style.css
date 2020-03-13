@@ -30,7 +30,8 @@ body{
 .pageTitle{
   display: flex;
   align-items: center;
-  margin-top: -80px;
+  margin: -80px auto 0 auto;
+  max-width: 1380px;
 }
 .pageTitle h1{
   margin-left: 30px;
@@ -56,7 +57,7 @@ body{
 }
 .resumoCongresso{
   max-width: 1380px;
-  margin: 90px 0;
+  margin: 90px auto;
   
 }
 .destaqueTxt{
@@ -221,28 +222,32 @@ b{
   margin: 0 auto;
 }
 
-.topoCongresso__container{ 
-  display: block;
-  /* background: red; */
-  width: 1600px;
-  height: 180px;
-  /* float: left; */
-  z-index: 999;
-  /* left: 65px; */
-  /* position: absolute; */
-  margin-left: -124px;
-  background: none;
-  opacity: 1;
+.topo_container{ 
+  background: #FFFBD2;
+    margin: 0;
+    width: 100%;
+    max-width: 1600px;
+}
+.container_wide{
+  width: 100%;
+    max-width: 1600px;
+    padding: 0;
+    margin: 0;
 }
 
 .topoCongresso{
-  background: url(/static/media/congresso.abd61553.png) center;
+  background: url('./assets/congresso.png') center;
   height: 180px;
-  opacity: 1;
+  opacity: 0.25;
   width: 1300px;
   margin: 0 auto;
-  text-align: center;
-  display: flex;
+}
+.topo_mapa{
+  background: url('./assets/mapa.png') center;
+  height: 180px;
+  opacity: 0.25;
+  width: 1300px;
+  margin: 0 auto;
 }
 
 .above-background {
@@ -300,4 +305,27 @@ b{
   display: flex;
   justify-content: flex-end;
   flex-direction: column  ;
+}
+.destaque_azul{
+  box-shadow: -10px 10px 0px 0px #18BAAF;
+  background-color: #87F6F2;
+  font-size: 1.125rem;
+  max-width: 902px;
+  height: 92px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.destaque_azul p{
+  margin: 0;
+}
+.titleDesaque{
+  color: #FD2270;
+  font-size: 2.75rem;
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+.center_text{
+  text-align: center;
 }

@@ -7,16 +7,12 @@ import topo from '../../assets/congresso.png'
 
 const Congresso = () =>(
 
-  <Container className="desk">
-
-  <div className="topoCongresso__container">
-    <Row className="topoCongresso">
-      <div className="above-background">
-
-      </div>
-    </Row>
-  </div>
-
+  <Container className="container_wide">
+        <Container className="topo_container">
+          <Row className="topoCongresso">
+            
+          </Row>
+        </Container>
     <Row>
       <Col className="pageTitle">
       
