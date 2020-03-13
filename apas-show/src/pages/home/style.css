@@ -26,6 +26,8 @@
 }
 .destaque_txt {
   align-self: center;
+  font-size: 1.375rem;
+  white-space: nowrap;
 }
 .expositores {
   color:#8481B7;
@@ -56,4 +58,47 @@
 }
 .gestao hr{
   border-top: 2px solid #F28133;
+}
+.inform{
+  margin: 80px auto;
+  font-size: 2.1875rem;
+}
+.destaque_amarelo{
+  box-shadow: -10px 10px 0px 0px rgba(252,230,60,1);
+  background-color: #FFEFD1;
+  max-width: 1132px;
+  text-align: center;
+  align-items: center;
+  height: 92px;
+  width: 100%;
+}
+.destaque_amarelo h3{
+  font-size: 35px;
+  margin: 0;
+  padding: 0;
+}
+.card_amarelo {
+  box-shadow: -10px 10px 0px 0px rgba(252,230,60,1);
+  background-color: #FFEFD1;
+}
+.card_azul {
+  box-shadow: -10px 10px 0px 0px #18BAAF;
+  background-color: #87F6F2;
+}
+.titulo_home{
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+.destaque_txt :first-child{
+  font-size: 1.75rem;
+}
+.dados img{
+  float: left;
+  margin-left: -125px;
+}
+.visitantes{
+  margin-top: 35px !important;
+}
+.gestao{
+  margin-top: 50px !important;
 }

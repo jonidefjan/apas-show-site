@@ -1,6 +1,10 @@
 import React from 'react';
 import {Container, Row, Col, Button, Media} from 'react-bootstrap'
 import './style.css'
+import expositores from '../../assets/expositores.png'
+import gestao from '../../assets/gestao.png'
+import negocios from '../../assets/negocios.png'
+import visitantes from '../../assets/visitantes.png'
 
 const Home = () =>{
   return(
@@ -11,7 +15,7 @@ const Home = () =>{
       <h1 className="titulo_home">Confira alguns números da <b>feira em 2019</b></h1>
       <Row>
         <Col className="expositores dados">
-          
+          <img src={expositores}/>
           <h2>Expositores</h2>
           <hr></hr>
           <div className="dados_descricao">
@@ -46,7 +50,7 @@ const Home = () =>{
           </div>
         </Col>
         <Col className="visitantes dados">
-          
+          <img src={visitantes}/>
           <h2>Visitantes</h2>
           <hr></hr>
           <div className="dados_descricao">
@@ -83,6 +87,7 @@ const Home = () =>{
 
       <Row>
         <Col className="conexoes dados">
+          <img src={negocios}/>
           <h2>Conexões de Negócios</h2>
           <hr></hr>
           <div className="dados_descricao">
@@ -125,6 +130,7 @@ const Home = () =>{
           </div>
         </Col>
         <Col className="gestao dados">
+          <img src={gestao}/>
           <h2>Congresso de gestão</h2>
           <hr></hr>
           <div className="dados_descricao">
@@ -152,40 +158,42 @@ const Home = () =>{
           </div>
         </Col>
       </Row>
-
-      <Row>
+    <Container>
+      <Row className="inform destaque_amarelo justify-content-md-center">
         <Col>
-          <h1>Vai comparecer ao evento? Confira informações úteis</h1> <Button>Informações úteis</Button>
+          <h3>Vai comparecer ao evento? Confira informações úteis <Button className="inscrevase">Informações úteis</Button></h3>
         </Col>
       </Row>
-
+      </Container>
       <Row>
-        <Col>
+        <Col className="card_amarelo">
           <h1>Expositores</h1>
           <div>
-            <p>Veja o que vai rolar na feira, confira o mapa e os expositores que estarão presentes.</p>
-            <Button>Saiba Mais</Button>
+            <div>
+              <p>Veja o que vai rolar na feira, confira o mapa e os expositores que estarão presentes.</p>
+              <Button className="inscrevase">Saiba Mais</Button>
+            </div>
           </div>
         </Col>
-        <Col>
+        <Col className="card_azul">
           <h1>Arena Inovação</h1>
           <div>
             <p>Conheça o trabalho das startups que estão inovando no mercado.</p>
-            <Button>Saiba Mais</Button>
+            <Button className="inscrevase">Saiba Mais</Button>
           </div>
         </Col>
-        <Col>
+        <Col className="card_amarelo">
           <h1>Congresso</h1>
           <div>
             <p>Todos os congressistas que estarão presentes, um pouco sobre eles e a agenda.</p>
-            <Button>Saiba Mais</Button>
+            <Button className="inscrevase">Saiba Mais</Button>
           </div>
         </Col>
-        <Col>
+        <Col className="card_azul">
           <h1>Resp. Social</h1>
           <div>
             <p>Confira o projeto de responsabilidade social que a feira promove e descobra como fazer parte.</p>
-            <Button>Saiba Mais</Button>
+            <Button className="inscrevase">Saiba Mais</Button>
           </div>
         </Col>
       </Row>
