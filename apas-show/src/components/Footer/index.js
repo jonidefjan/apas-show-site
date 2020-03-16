@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
+import { Container, Row, Col, Image, Table } from 'react-bootstrap';
 import './style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
@@ -15,69 +17,96 @@ const calendar = <FontAwesomeIcon icon={faCalendar}/>
 const map = <FontAwesomeIcon icon={faMapMarkerAlt}/>
 
 const Footer = () => (
-  <footer id="footer">
+  <Container fluid className="footer">
+      <Row>
+        <Col className="footer_logo">
+          <Image src={logo}/>
+        </Col>
 
-    <div className="col-one">
-      <img src={logo} className="logo-apas"></img>
-    </div>
+        <Col>
 
-    <div className="col-two">
-      <div className="info">
-        <p className="icone-info">{calendar} 18 a 21 de maio de 2020</p>
-        <p className="icone-info">{map}  expo center norte</p>
-      </div>
-      <div className="social">
-        <ul>
-          <li><a href="">{face}</a></li>
-          <li><a href="">{tw}</a></li>
-          <li><a href="">{yt}</a></li>
-          <li><a href="">{lnd}</a></li>
-          <li><a href="">{envelope}</a></li>
-        </ul>
-      </div>
-    </div>
+          <Row>
+            <Col>
+              <p className="icone-info"><span>{calendar}</span> 18 a 21 de maio de 2020</p>
+              <p className="icone-info"><span>{map}</span>  expo center norte</p>
+            </Col>
+          </Row>
 
-    <div className="col-three">
-        <ul className="category">
-          <li>expositores</li>
-          <li>mapa</li>
-          <li>expositores</li>
-          <li>busca</li>
-          <li>categorias</li>
-        </ul>
-        <ul className="category">
-          <li>arena inovação</li>
-          <li>mapa</li>
-          <li>startups</li>
-          <li>inscrição</li>
-        </ul>
-        <ul className="category">
-          <li>prêmios</li>
-          <li>geração de Negócios</li>
-          <li>popai</li>
-        </ul>
-        <ul className="category">
-          <li>congresso</li>
-          <li>grade</li>
-          <li>agenda</li>
-          <li>certificado</li>
-        </ul>
-        <ul className="category">
-          <li>resp. social</li>
-          <li>arrecadação</li>
-          <li>prêmio resp. social</li>
-        </ul>
-        <ul className="category">
-          <li>imprensa</li>
-          <li>releases</li>
-          <li>vídeos</li>
-          <li>fotos</li>
-          <li>contato</li>
-        </ul>
+          <Row>
+            <Col >
+            <Table className="social">
+              <thead>
+                <th><a href="">{face}</a></th>
+                <th><a href="">{tw}</a></th>
+                <th><a href="">{yt}</a></th>
+                <th><a href="">{lnd}</a></th>
+                <th><a href="">{envelope}</a></th>
+              </thead>
+            </Table>
+            </Col>
+          </Row>
 
-    </div>
+        </Col>
 
-  </footer>
+        <Col className="nav_footer" >
+
+          <div>
+            <h4>expositores</h4>
+            <ul className="category">
+              <li><Link to='/'>mapa</Link></li>
+              <li><Link to='/'>expositores</Link></li>
+              <li><Link to='/'>busca</Link></li>
+              <li><Link to='/'>categorias</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>arena <br/>inovação</h4>
+            <ul className="category">
+              <li><Link to='/'>mapa</Link></li>
+              <li><Link to='/'>startups</Link></li>
+              <li><Link to='/'>inscrição</Link></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4>prêmios</h4>
+            <ul className="category">
+              <li><Link to='/'>geração de <br/>Negócios</Link></li>
+              <li><Link to='/'>popai</Link></li>
+            </ul>
+          </div>
+          
+          <div>
+          <h4>congresso</h4>
+          <ul className="category">
+            <li><Link to='/'>grade</Link></li>
+            <li><Link to='/'>agenda</Link></li>
+            <li><Link to='/'>certificado</Link></li>
+          </ul>
+          </div>
+
+          <div>
+            <h4>resp. social</h4>
+            <ul className="category">
+              <li><Link to='/'>arrecadação</Link></li>
+              <li><Link to='/'>prêmio resp. <br/>social</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>imprensa</h4>
+            <ul className="category">
+              <li><Link to='/'>releases</Link></li>
+              <li><Link to='/'>vídeos</Link></li>
+              <li><Link to='/'>fotos</Link></li>
+              <li><Link to='/'>contato</Link></li>
+            </ul>
+          </div>
+
+        </Col>
+      </Row>
+  </Container>
 );
 
 export default Footer;

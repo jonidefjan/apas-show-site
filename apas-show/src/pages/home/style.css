@@ -2,8 +2,12 @@
   font-weight: lighter;
   font-size: 2.75rem;
   color: #FD2270;
-  line-height: 32px;
+  line-height: 2.5rem;
   margin: 0 auto;
+  
+}
+.dados{
+  white-space: normal;
 }
 .dados h2{
   font-size: 2.4375rem;
@@ -14,11 +18,12 @@
 
 }
 .dados h1{
-  font-size: 4rem;
   font-weight: bold;
   width: fit-content;
   margin: 0;
   padding: 0;
+  white-space: normal;
+  
 }
 .destaque_num{
   flex-grow: initial;
@@ -66,11 +71,10 @@
 .destaque_amarelo{
   box-shadow: -10px 10px 0px 0px rgba(252,230,60,1);
   background-color: #FFEFD1;
-  max-width: 1132px;
+  max-width: 70.75rem;
   text-align: center;
   align-items: center;
-  height: 92px;
-  width: 100%;
+  padding: 20px;
 }
 .destaque_amarelo h3{
   font-size: 35px;
@@ -82,17 +86,23 @@
   background-color: #FFEFD1;
   width: 300px;
     height: 300px;
+    margin-left: 2.25rem;
+    margin-bottom: 1rem;
 }
 .card_azul {
   box-shadow: -10px 10px 0px 0px #18BAAF;
   background-color: #87F6F2;
   width: 300px;
     height: 300px;
+    margin-left: 2.25rem;
+    margin-bottom: 1rem;
 }
 .titulo_home{
   margin-top: 90px;
   margin-bottom: 40px;
+  text-align: center;
 }
+
 .destaque_txt :first-child{
   font-size: 1.75rem;
 }
@@ -112,7 +122,7 @@
 
 .card_amarelo div, .card_azul div{
   display: grid;
-  grid-template-columns: 65% 35%;
+  grid-template-columns: 65% 0%;
   font-size: 1.3125rem;
   padding-top: 40px;
   padding-left: 15px;
@@ -157,20 +167,19 @@ justify-content: center;
 }
 .fale{
   margin: 70px auto;
+  text-align: center;
 }
 .fale h1{
   font-size: 2.1875rem;
 }
 .patrocinadores{
   text-align: center;
-  white-space: nowrap;
   margin-bottom: 100px;
 }
 .patrocinadores .row{
   margin-bottom: 60px;
 }
 .apoio_institucional div{
-  display: flex;
   align-items: center;
   justify-content: space-around;
 }

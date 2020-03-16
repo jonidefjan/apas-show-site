@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Row, Col, Button, Media} from 'react-bootstrap'
+import {Container, Row, Col, Button, Media, ResponsiveEmbed, Image} from 'react-bootstrap'
 import './style.css'
 import expositores from '../../assets/expositores.png'
 import gestao from '../../assets/gestao.png'
@@ -52,15 +52,17 @@ const Home = () =>{
     <Container className="banner_home">
       <div>A 36ª edição da <b>APAS Show</b> vai promover, durante 4 dias, negócios, experiências e networking entre empresários e executivos do setor supermercadista nacional e internacional. Uma oportunidade única para expor sua marca e realizar grandes negócios.</div>
     </Container>
-
-    <Container className="numeros">
+    <Container  className="numeros">
       <h1 className="titulo_home">Confira alguns números da <b>feira em 2019</b></h1>
       <Row>
-        <Col className="expositores dados">
-          <img src={expositores}/>
-          <h2>Expositores</h2>
-          <hr></hr>
-          <div className="dados_descricao">
+        <Col xs={12} sm={6} className="expositores dados">
+            <Row>
+              <Col>
+                <Image src={expositores}/>
+                <h2>Expositores</h2>
+                <hr></hr>
+              </Col>
+            </Row>
             <Row>
               <Col className="destaque_num">
                 <h1>847</h1>
@@ -89,9 +91,8 @@ const Home = () =>{
               </Col>
             </Row>
 
-          </div>
         </Col>
-        <Col className="visitantes dados">
+        <Col xs={12} sm={6} className="visitantes dados">
           <img src={visitantes}/>
           <h2>Visitantes</h2>
           <hr></hr>
@@ -125,10 +126,10 @@ const Home = () =>{
 
           </div>
         </Col>
-      </Row>
+    
 
-      <Row>
-        <Col className="conexoes dados">
+     
+        <Col xs={12} sm={6} className="conexoes dados">
           <img src={negocios}/>
           <h2>Conexões de Negócios</h2>
           <hr></hr>
@@ -171,7 +172,7 @@ const Home = () =>{
 
           </div>
         </Col>
-        <Col className="gestao dados">
+        <Col xs={12} sm={6} className="gestao dados">
           <img src={gestao}/>
           <h2>Congresso de gestão</h2>
           <hr></hr>
@@ -200,15 +201,16 @@ const Home = () =>{
           </div>
         </Col>
       </Row>
-      <Container>
+      
+    </Container>
+    <Container fluid>
         <Row className="inform destaque_amarelo justify-content-md-center">
           <Col>
             <h3>Vai comparecer ao evento? Confira informações úteis <Button className="inscrevase">Informações úteis</Button></h3>
           </Col>
         </Row>
       </Container>
-    </Container>
-    <Container className="wide">
+    <Container fluid>
     <Row className="cards">
         <Col >
           <h1>Expositores</h1>
@@ -256,9 +258,11 @@ const Home = () =>{
       <h1 className="titulo_home">Confira o que rolou na <b>APAS Show 2019</b></h1>
       <Row className="video_row">
         <Col className="video_col">
-          <div>
-            <iframe width="900" height="500" src="https://www.youtube-nocookie.com/embed/mPE6XoEkdyI?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
+        <div style={{ width: 900, height: 'auto' }}>
+          <ResponsiveEmbed aspectRatio="16by9">
+            <embed src="https://www.youtube-nocookie.com/embed/mPE6XoEkdyI?controls=0" />
+          </ResponsiveEmbed>
+        </div>
         </Col>
       </Row>
     </Container>

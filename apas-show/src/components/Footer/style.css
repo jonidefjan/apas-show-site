@@ -1,85 +1,58 @@
-#footer{
-  height: 289px;
-  width: 1600px;
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   background-color: #FFEFD1;
-  display: flex;
-  justify-content:center;
-  align-items:flex-start;
-  padding-top: 65px;
+  max-height: 100vh;
 }
-
-#footer .col-one{
-  flex:1;
-  margin: 0 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-  
+.footer >.row{
+  align-items: flex-start;
+  margin-top: 4rem;
 }
-
-#footer .col-one img{
-  width: 154px;
-  margin: 0 auto;
-  float: right;
+.footer_logo {
+  text-align: center; 
 }
-
-#footer .col-two{
-  flex:1;
+.nav_footer{
+  font-size: 0.875rem;
+    white-space: nowrap;
+    line-height: 1.125rem;
+    display: flex;
+    align-items: initial;
+    justify-content: space-between;
+    color: #000;
+    text-transform: capitalize;
 }
-
-#footer .col-two .info{
-  border-bottom: 1px solid black;
-  width: 350px;
-  margin-bottom: 24px;
-  
+.nav_footer div{
+  margin-left: 1.5rem;
 }
-#footer .col-two .info p{
-  font-size: 26px;
-  text-transform: uppercase;
-  margin-bottom: 24px;
+.nav_footer h4{
+  font-size: 0.875rem;
   font-weight: bold;
-}
-
-#footer .col-two .social ul{
-  display: flex;
-  list-style-type: none;
-}
-#footer .col-two .social ul li{
-  flex: 1;
-}
-#footer .col-two .social ul li a svg{
-  font-size: 32px;
   color: #CF4169;
 }
-#footer .col-three{
-  flex: 2;
-  display: flex;
-    justify-content: center;
-}
-#footer .col-three .category{
-  display: inline-table;
-  margin: 0 15px;
-}
-
-#footer .col-three .category{
-  max-width: 100px;
-}
-
-#footer .col-three .category li{
+.nav_footer a{
   color: #000;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 18px;
-  list-style-type: none;
-  margin-bottom:5px ;
-  text-transform: capitalize;
 }
-
-#footer .col-three ul li{
-  flex: 1;
+@media screen and (max-width: 600px){
+  .nav_footer{
+    display: none;
+  }
 }
-#footer .col-three ul li:first-child{
+.category{
+  list-style: none;
+}
+.social th{
+  border: none !important;
+}
+.social a{
+  font-size: 2rem;
   color: #CF4169;
+}
+.icone-info {
+  font-size: 1.625rem;
   font-weight: bold;
+  white-space: nowrap;
+}
+.icone-info span{
+  color: #CF4169;
 }

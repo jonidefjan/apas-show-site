@@ -46,8 +46,11 @@ header#main-header button{
 
 .header{
   background-color: #FCE63C;
-  max-width: none;
-  height: 60px;
+    max-width: 1600px;
+    height: 60px;
+    position: fixed;
+    width: 100vw;
+    z-index: 999;
 }
 .header nav{
   margin: 0px auto;

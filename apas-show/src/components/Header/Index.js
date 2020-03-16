@@ -26,6 +26,7 @@ const Header = () => (
         <Nav.Link href="/imprensa">Imprensa</Nav.Link>
         <Nav.Link href="/imprensa">Inf. Úteis</Nav.Link>
       </Nav>
+    </Navbar.Collapse>
       <Nav className="mr-auto">
       <ButtonGroup aria-label="Basic example">
         <Button variant="secondary" >
@@ -45,7 +46,7 @@ const Header = () => (
           Inscreva-se
         </Button>
       </Nav>
-    </Navbar.Collapse>
+    
   </Navbar>
 
   </Container>
