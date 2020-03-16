@@ -306,6 +306,13 @@ b{
     ;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 }
+.banner_home div{
+  position: relative;
+    width: 450px;
+    height: 192px;
+    left:67%;
+    top: 0%;
+}
 .home .container{
   display: flex;
   justify-content: flex-end;
@@ -342,7 +349,10 @@ b{
     font-size: 4rem;
     white-space: nowrap;
   }
-  .dados{
-    white-space: nowrap;
+}
+@media screen and (min-width:1600px){
+  .App{
+    max-width: 100vw;
+
   }
 }
