@@ -86,7 +86,7 @@
   background-color: #FFEFD1;
   width: 300px;
     height: 300px;
-    margin-left: 2.25rem;
+    margin-left: 60px;
     margin-bottom: 1rem;
 }
 .card_azul {
@@ -94,7 +94,7 @@
   background-color: #87F6F2;
   width: 300px;
     height: 300px;
-    margin-left: 2.25rem;
+    margin-left: 60px;
     margin-bottom: 1rem;
 }
 .titulo_home{
@@ -146,7 +146,7 @@
 .video_row{
   text-align: center;
   }
-iframe{
+.video_col div{
   border: 10px solid black;
 }
 

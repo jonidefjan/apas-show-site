@@ -350,9 +350,3 @@ b{
     white-space: nowrap;
   }
 }
-@media screen and (min-width:1600px){
-  .App{
-    max-width: 100vw;
-
-  }
-}
