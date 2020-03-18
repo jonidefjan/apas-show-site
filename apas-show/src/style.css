@@ -9,9 +9,7 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
-body{
-  background-color: #F8F8F8;
-}
+
 .container-fluid{
   padding: 0;
 }
@@ -19,15 +17,14 @@ body{
 .App{
   display: flex;
   font-family: 'Roboto', sans-serif;
-  max-width: 1600px;
+  max-width: 100vw;
   color: #333;
   margin: 0 auto;
   flex-flow: row wrap;
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
   background-color: #fff;
   width: 100vw;
+  justify-content: center;
+  overflow: hidden;
 }
 
 
@@ -266,13 +263,17 @@ b{
 }
 
 .home{
-  max-width: 1600px;
+  max-width: 100vw;
   padding: 0;
   margin: 0;
 
 }
-.banner_home{
+.fundo_amarelo{
   background-color: #FCE63C;
+
+}
+.banner_home{
+  position: relative;
   height: 650px;
   max-width: 1600px;
   margin-top: 60px;
@@ -302,21 +303,17 @@ b{
     980px 65px,
     1130px 50px,
     1140px 185px, 
-    1300px 60px
+    1260px 60px
     ;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 }
-.banner_home div{
-  position: relative;
-    width: 450px;
-    height: 192px;
-    left:67%;
-    top: 0%;
-}
+
 .home .container{
   display: flex;
   justify-content: flex-end;
   flex-direction: column  ;
+  position: relative;
+  max-width: 1600px;
 }
 .destaque_azul{
   box-shadow: -10px 10px 0px 0px #18BAAF;
@@ -341,12 +338,15 @@ b{
 .center_text{
   text-align: center;
 }
-@media screen and (max-width: 1350px){
+@media screen and (max-width: 1024px){
   .inform{
     display: none;
   }
   .dados h1{
     font-size: 4rem;
     white-space: nowrap;
+  }
+  .header .inscrevase{
+    display: none;
   }
 }

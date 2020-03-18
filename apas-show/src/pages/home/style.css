@@ -84,18 +84,10 @@
 .card_amarelo {
   box-shadow: -10px 10px 0px 0px rgba(252,230,60,1);
   background-color: #FFEFD1;
-  width: 300px;
-    height: 300px;
-    margin-left: 60px;
-    margin-bottom: 1rem;
 }
 .card_azul {
   box-shadow: -10px 10px 0px 0px #18BAAF;
   background-color: #87F6F2;
-  width: 300px;
-    height: 300px;
-    margin-left: 60px;
-    margin-bottom: 1rem;
 }
 .titulo_home{
   margin-top: 90px;
@@ -120,13 +112,6 @@
   max-width: 1375px;
 }
 
-.card_amarelo div, .card_azul div{
-  display: grid;
-  grid-template-columns: 65% 0%;
-  font-size: 1.3125rem;
-  padding-top: 40px;
-  padding-left: 15px;
-}
 .cards .col:nth-child(even){
   margin-top: 45px;
 }
@@ -182,4 +167,18 @@ justify-content: center;
 .apoio_institucional div{
   align-items: center;
   justify-content: space-around;
+}
+.banner_txt{
+  position: absolute;
+  max-width: 508px;
+  max-height: 192px;
+  right: 7.063rem;
+  bottom: 2rem;
+}
+.banner_txt p{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.numeros{
+  max-width: 1600px;
 }

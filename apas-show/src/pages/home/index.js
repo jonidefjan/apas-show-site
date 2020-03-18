@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Row, Col, Button, Media, ResponsiveEmbed, Image} from 'react-bootstrap'
+import {Container, Row, Col, Button, Card, ResponsiveEmbed, Image} from 'react-bootstrap'
 import './style.css'
 import expositores from '../../assets/expositores.png'
 import gestao from '../../assets/gestao.png'
@@ -48,11 +48,13 @@ import apexbrasil from '../../assets/Logos Apoio Institucional/apexbrasil.png'
 
 const Home = () =>{
   return(
-  <Container className="home">
-    <Container className="banner_home">
-      <div>A 36ª edição da <b>APAS Show</b> vai promover, durante 4 dias, negócios, experiências e networking entre empresários e executivos do setor supermercadista nacional e internacional. Uma oportunidade única para expor sua marca e realizar grandes negócios.</div>
+  <Container fluid>
+    <Container fluid className="fundo_amarelo">
+    <Container  className="banner_home">
+      <div className="banner_txt"><p>A 36ª edição da <b>APAS Show</b> vai promover, durante 4 dias, negócios, experiências e networking entre empresários e executivos do setor supermercadista nacional e internacional. Uma oportunidade única para expor sua marca e realizar grandes negócios.</p></div>
     </Container>
-    <Container  className="numeros">
+    </Container>
+    <Container className="numeros">
       <h1 className="titulo_home">Confira alguns números da <b>feira em 2019</b></h1>
       <Row>
         <Col xs={12} sm={6} className="expositores dados">
@@ -93,7 +95,7 @@ const Home = () =>{
 
         </Col>
         <Col xs={12} sm={6} className="visitantes dados">
-          <img src={visitantes}/>
+          <Image src={visitantes}/>
           <h2>Visitantes</h2>
           <hr></hr>
           <div className="dados_descricao">
@@ -126,11 +128,9 @@ const Home = () =>{
 
           </div>
         </Col>
-    
-
      
         <Col xs={12} sm={6} className="conexoes dados">
-          <img src={negocios}/>
+          <Image src={negocios}/>
           <h2>Conexões de Negócios</h2>
           <hr></hr>
           <div className="dados_descricao">
@@ -173,7 +173,7 @@ const Home = () =>{
           </div>
         </Col>
         <Col xs={12} sm={6} className="gestao dados">
-          <img src={gestao}/>
+          <Image src={gestao}/>
           <h2>Congresso de gestão</h2>
           <hr></hr>
           <div className="dados_descricao">
@@ -210,50 +210,61 @@ const Home = () =>{
           </Col>
         </Row>
       </Container>
-    <Container fluid>
-    <Row className="cards">
+    
+    <Container>
+    <Row  className="cards">
+
         <Col >
-          <h1>Expositores</h1>
-          <div className="card_amarelo">
-            <div>
-              <p>Veja o que vai rolar na feira, confira o mapa e os expositores que estarão presentes.</p>
-              <img src={expo}/>
+          <Card className="card_amarelo">
+            <Card.Header>Expositores</Card.Header>
+            <Card.Body>
+              <Card.Text>
+                Conheça o trabalho das startups que estão inovando no mercado.
+              </Card.Text>
               <Button className="inscrevase">Saiba Mais</Button>
-            </div>
-          </div>
+            </Card.Body>
+          </Card>
         </Col>
-        <Col>
-          <h1>Arena Inovação</h1>
-          <div className="card_azul">
-            <div>
-              <p>Conheça o trabalho das startups que estão inovando no mercado.</p>
-              <img src={board}/>
-              <Button className="inscrevase">Saiba Mais</Button>
-            </div>
-          </div>
-        </Col>
+
         <Col >
-          <h1>Congresso</h1>
-          <div className="card_amarelo">
-            <div>
-              <p>Todos os congressistas que estarão presentes, um pouco sobre eles e a agenda.</p>
-              <img src={bwifi}/>
+          <Card className="card_azul">
+            <Card.Header>Arena Inovação</Card.Header>
+            <Card.Body>
+              <Card.Text>
+                Veja o que vai rolar na feira, confira o mapa e os expositores que estarão presentes.
+              </Card.Text>
               <Button className="inscrevase">Saiba Mais</Button>
-            </div>
-          </div>
+            </Card.Body>
+          </Card>
         </Col>
+
         <Col >
-          <h1>Resp. Social</h1>
-          <div className="card_azul">
-            <div>
-              <p>Confira o projeto de responsabilidade social que a feira promove e descobra como fazer parte.</p>
-              <img src={clip}/>
+          <Card className="card_amarelo">
+            <Card.Header>Congresso</Card.Header>
+            <Card.Body>
+              <Card.Text>
+                Veja o que vai rolar na feira, confira o mapa e os expositores que estarão presentes.
+              </Card.Text>
               <Button className="inscrevase">Saiba Mais</Button>
-            </div>
-          </div>
+            </Card.Body>
+          </Card>
+        </Col>
+
+        <Col >
+          <Card className="card_azul">
+            <Card.Header>Expositores</Card.Header>
+            <Card.Body>
+              <Card.Text>
+                Veja o que vai rolar na feira, confira o mapa e os expositores que estarão presentes.
+              </Card.Text>
+              <Button className="inscrevase">Saiba Mais</Button>
+            </Card.Body>
+          </Card>
         </Col>
       </Row>
     </Container>
+    
+    
     <Container className="full">
       <h1 className="titulo_home">Confira o que rolou na <b>APAS Show 2019</b></h1>
       <Row className="video_row">
@@ -281,16 +292,16 @@ const Home = () =>{
         <Col>
           <p>Patrocinador Platinum</p>
           <div>
-            <img src={ambev}/>
+            <Image src={ambev}/>
           </div>
         </Col>
         <Col>
           <p>Patrocinador Silver</p>
           <div className="apoio_institucional">
-            <img src={bin}/>
-            <img src={hero}/>
-            <img src={marquespan}/>
-            <img src={nestle}/>
+            <Image src={bin}/>
+            <Image src={hero}/>
+            <Image src={marquespan}/>
+            <Image src={nestle}/>
           </div>
         </Col>
       </Row>
@@ -298,25 +309,25 @@ const Home = () =>{
         <Col>
           <p>Café Oficial</p>
           <div>
-            <img src={nescafe}/>
+            <Image src={nescafe}/>
           </div>
         </Col>
         <Col>
           <p>Apoio de mídia</p>
           <div>
-            <img src={globo}/>
+            <Image src={globo}/>
           </div>
         </Col>
         <Col>
           <p>Jornal Oficial</p>
           <div>
-            <img src={estadao}/>
+            <Image src={estadao}/>
           </div>
         </Col>
         <Col>
           <p>Rádio Oficial</p>
           <div>
-            <img src={radios}/>
+            <Image src={radios}/>
           </div>
         </Col>
       </Row>
@@ -324,15 +335,15 @@ const Home = () =>{
         <Col>
           <p>Apoio Técnico</p>
           <div>
-            <img src={fgv}/>
+            <Image src={fgv}/>
           </div>
         </Col>
         <Col className="apoio_institucional">
           <p>Congresso</p>
           <div>
-            <img src={brasnica}/>
-            <img src={jmacedo}/>
-            <img src={opteon}/>
+            <Image src={brasnica}/>
+            <Image src={jmacedo}/>
+            <Image src={opteon}/>
           </div>
         </Col>
       </Row>
@@ -340,27 +351,27 @@ const Home = () =>{
         <Col className="apoio_institucional">
           <p>Apoio Institucional</p>
           <div>
-            <img src={alas}/>
-            <img src={abras}/>
-            <img src={abrasel}/>
-            <img src={abag}/>
-            <img src={abba}/>
-            <img src={abia}/>
+            <Image src={alas}/>
+            <Image src={abras}/>
+            <Image src={abrasel}/>
+            <Image src={abag}/>
+            <Image src={abba}/>
+            <Image src={abia}/>
           </div>
           <div>
-            <img src={abic}/>
-            <img src={abicab}/>
-            <img src={abiepan}/>
-            <img src={abimapi}/>
-            <img src={abis}/>
+            <Image src={abic}/>
+            <Image src={abicab}/>
+            <Image src={abiepan}/>
+            <Image src={abimapi}/>
+            <Image src={abis}/>
           </div>
           <div>
-            <img src={abpa}/>
-            <img src={abrafigo}/>
-            <img src={anr}/>
-            <img src={globalcoldchain}/>
-            <img src={abiaf}/>
-            <img src={ital}/>
+            <Image src={abpa}/>
+            <Image src={abrafigo}/>
+            <Image src={anr}/>
+            <Image src={globalcoldchain}/>
+            <Image src={abiaf}/>
+            <Image src={ital}/>
           </div>
         </Col>
       </Row>
@@ -368,25 +379,25 @@ const Home = () =>{
         <Col>
           <p>Divulgação</p>
           <div>
-            <img src={supervarejo}/>
+            <Image src={supervarejo}/>
           </div>
         </Col>
         <Col>
           <p>Promoção e Organização</p>
           <div>
-            <img src={promovisao}/>
+            <Image src={promovisao}/>
           </div>
         </Col>
         <Col>
           <p>Administração e Realização</p>
           <div>
-            <img src={apas}/>
+            <Image src={apas}/>
           </div>
         </Col>
         <Col>
           <p>Parceria</p>
           <div>
-            <img src={apexbrasil}/>
+            <Image src={apexbrasil}/>
           </div>
         </Col>
       </Row>

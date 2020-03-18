@@ -11,7 +11,7 @@ const locale = '';
 const setLocale = localStorage.setItem(LOCALES, locale)
 
 const Header = () => (
-  <Container className="header">
+  <Container fluid className="header">
     
     <Navbar expand="lg">
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -26,7 +26,6 @@ const Header = () => (
         <Nav.Link href="/imprensa">Imprensa</Nav.Link>
         <Nav.Link href="/imprensa">Inf. Úteis</Nav.Link>
       </Nav>
-    </Navbar.Collapse>
       <Nav className="mr-auto">
       <ButtonGroup aria-label="Basic example">
         <Button variant="secondary" >
@@ -38,15 +37,16 @@ const Header = () => (
         <Button variant="secondary" >
           <img src={esflag}/>
            ES /</Button>
-      </ButtonGroup>
-      
+      </ButtonGroup> 
       </Nav>
+      </Navbar.Collapse>
+
       <Nav className="mr-auto">
         <Button className="inscrevase">
           Inscreva-se
         </Button>
       </Nav>
-    
+      
   </Navbar>
 
   </Container>

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Row, Col, Button, Media} from 'react-bootstrap'
+import {Container, Row, Col, Button, Image} from 'react-bootstrap'
 import mapaIcon from '../../assets/mapa_icon.png'
 import mapa from '../../assets/planta.png'
 
@@ -15,8 +15,8 @@ const Mapa = () =>{
         <Col className="pageTitle">
         
 
-
-          <img src={mapaIcon} alt="Mapa e Expositores"/>
+          
+          <Image src={mapaIcon} alt="Mapa e Expositores"/>
           <h1>Mapa e Expositores</h1>
           
           
@@ -31,7 +31,7 @@ const Mapa = () =>{
       <Container className="container_wide">
         <Row>
           <Col className="center_text">
-            <img src={mapa}/>
+            <Image src={mapa}/>
           </Col>
         </Row>
       </Container>
